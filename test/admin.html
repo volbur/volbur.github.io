@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- dir="rtl" -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="header">
+        <div class="header__profile-info">
+          <div class="profile-info__text">
+            <span>ילארשי ל </span>ארשי ןכוסה םש
+          </div>
+          <div class="profile-info__text"><span>למשח </span>תרבח ביטקלוק</div>
+          <div class="profile-info__text visually-hidden">
+            <span>השמ םייח </span>,םולש
+          </div>
+        </div>
+        <a href="#" class="header__avatar">
+          <img src="img/icons/icon-profile.svg" alt="avatar" />
+        </a>
+      </header>
+      <main class="main-admin">
+        <section class="offers">
+          <div class="offers__sorts">
+            <div class="offers__sorts-left">וקפוהש תוסילופ</div>
+            <div class="offers__sorts-right">תונורחא תועצה</div>
+          </div>
+          <form action="#" class="form form-border">
+            <div class="form-field__row">
+              <button
+                class="btn-icon btn-icon__search btn__submit"
+                type="submit"
+              ></button>
+              <button type="submit" class="btn btn__out">השדח העצה</button>
+              <div class="form-field__input-wrapper">
+                <button
+                  class="form-field__input-btn form-field__input-btn--search"
+                >
+                  <img src="img/icons/icon-search.svg" alt="icon search" />
+                </button>
+                <input
+                  class="form-field__input form-field__input-search"
+                  type="text"
+                  id="input-search"
+                  placeholder="אמסיס"
+                />
+              </div>
+            </div>
+          </form>
+          <ul class="offers__cards-desktop cards-desktop">
+            <li class="card-desktop__head">
+              <div class="card-desktop__title row1">חוקלל חלשנ</div>
+              <div class="card-desktop__title row2">הסילופ ‘סמ</div>
+              <div class="card-desktop__title row3">חוטיבה תליחת</div>
+              <div class="card-desktop__title row4">העצהה תחיתפ</div>
+              <div class="card-desktop__title row5">תוהז תדועת</div>
+              <div class="card-desktop__title row6">יושיר ‘סמ</div>
+              <div class="card-desktop__title row7">חטובמ םש</div>
+              <div class="card-desktop__title row8">רצומ</div>
+              <div class="card-desktop__title row9">ףנע</div>
+            </li>
+            <li class="card-desktop" v-for="item in items">
+              <div class="card-desktop__wrapper grid-container">
+                <div
+                  class="card-desktop__item card-desktop__item-isactive row1"
+                >
+                  <svg
+                    class="card-desktop__icon-check"
+                    v-if="item.isActive"
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11.5L10 18L22 2"
+                      stroke="#009C41"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>(חוקלל החלשנ)</span>
+                </div>
+                <div class="card-desktop__item row2">
+                  <span class="card-desktop__item-head">הסילופ ‘סמ</span>
+                  <span class="card-desktop__item-value">{{item.id}}</span>
+                </div>
+                <div class="card-desktop__item row3">
+                  <span class="card-desktop__item-head">חוטיבה תליחת</span>
+                  <span class="card-desktop__item-value"
+                    >{{item.dateStart}}</span
+                  >
+                </div>
+                <div class="card-desktop__item row4">
+                  <span class="card-desktop__item-head">העצהה תחיתפ</span>
+                  <span class="card-desktop__item-value">{{item.dateEnd}}</span>
+                </div>
+                <div class="card-desktop__item row5">
+                  <span class="card-desktop__item-head">תוהז תדועת</span>
+                  <span class="card-desktop__item-value"
+                    >{{item.phoneNumber}}</span
+                  >
+                </div>
+                <div class="card-desktop__item row6">
+                  <span class="card-desktop__item-head">יושיר ‘סמ</span>
+                  <span class="card-desktop__item-value">{{item.orderId}}</span>
+                </div>
+                <div class="card-desktop__item row7">
+                  <span class="card-desktop__item-head">חטובמ םש</span>
+                  <span class="card-desktop__item-value"
+                    >{{item.firstName}}</span
+                  >
+                </div>
+                <div class="card-desktop__item row8">
+                  <span class="card-desktop__item-head">רצומ</span>
+                  <span class="card-desktop__item-value"
+                    >{{item.lastName}}</span
+                  >
+                </div>
+                <div class="card-desktop__item card-desktop__item-iconcar row9">
+                  <img src="img/icons/icon-car.svg" alt="icon car" />
+                  <span>{{item.model}}</span>
+                </div>
+                <div
+                  class="card-desktop__item-nav card-desktop__nav-list row10"
+                >
+                  <div class="card-desktop__nav-item">
+                    <button class="btn-icon btn-icon__message"></button>
+                    <div class="card-desktop__nav-text">
+                      <div class="card-desktop__nav-title">תחילש</div>
+                      <div class="card-desktop__nav-subtitle">העצהה</div>
+                    </div>
+                  </div>
+                  <div class="card-desktop__nav-item">
+                    <button class="btn-icon btn-icon__pen"></button>
+                    <div class="card-desktop__nav-text">
+                      <div class="card-desktop__nav-title">תחילש</div>
+                      <div class="card-desktop__nav-subtitle">העצהה</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
