@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- dir="rtl" -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,132 +52,87 @@
               </div>
             </div>
           </form>
-          <ul class="offers__cards-mobile cards-mobile">
-            <li class="offers__card card-mobile" v-for="item in items">
-              <div class="card-mobile__header">
-                <div class="card-mobile__btns">
-                  <button class="btn-icon">
-                    <svg class="card-mobile__icon-letter" width="30" height="17" viewBox="0 0 30 17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9999 11.6372C29.6784 12.0662 29.357 12.5489 28.982 12.9243C27.857 14.0505 26.732 15.1767 25.607 16.3028C25.1784 16.7319 24.7499 17.1609 24.107 16.8927C23.5713 16.6782 23.5713 16.0883 23.5713 15.5521C23.5713 15.4448 23.5713 15.3912 23.5177 15.0694C22.8213 16.4101 21.6963 16.4637 20.5177 16.4637C14.5713 16.4637 8.62486 16.4101 2.67843 16.4637C1.33915 16.4637 0.428432 15.9811 -0.0537109 14.7476C-0.0537109 10.4038 -0.0537109 6.11356 -0.0537109 1.76972C0.642718 0.321766 1.07129 0 2.67843 0C8.83915 0 14.9999 0 21.2141 0C22.8749 0 23.6784 0.804416 23.732 2.46688C23.732 3.53943 23.732 4.61199 23.732 5.68454C24.5891 5.25552 24.9106 5.30915 25.5534 5.95268C26.8391 7.23975 28.1249 8.52681 29.4106 9.81388C29.6784 10.082 29.8391 10.4574 30.0534 10.7792C29.9999 11.1009 29.9999 11.3691 29.9999 11.6372ZM11.8927 1.07256C8.78557 1.07256 5.67843 1.07256 2.62486 1.07256C2.41057 1.07256 2.14272 1.01893 2.03557 1.12618C1.71415 1.34069 1.39272 1.60883 1.17843 1.9306C1.12486 2.03785 1.44629 2.46688 1.66057 2.62776C4.87486 4.71924 8.08915 6.7571 11.3034 8.84858C11.732 9.11672 11.9999 9.11672 12.4284 8.84858C15.6427 6.7571 18.9106 4.71924 22.1249 2.62776C22.7141 2.25237 22.7141 1.71609 22.1249 1.34069C21.857 1.17981 21.5356 1.07256 21.2141 1.07256C18.107 1.07256 14.9999 1.07256 11.8927 1.07256ZM22.4999 14.5868C21.2677 14.5868 20.1427 14.5331 19.0713 14.5868C16.9284 14.694 16.1784 14.1577 16.2856 11.7445C16.3391 9.97476 16.2856 9.97476 14.7856 9.11672C14.6249 9.00946 14.3034 9.00946 14.0891 9.11672C13.4999 9.43849 12.9641 9.81388 12.3749 10.1893C11.9999 10.4574 11.732 10.4574 11.357 10.1893C10.7677 9.81388 10.232 9.43849 9.58915 9.06309C9.42843 8.95584 9.16057 8.95584 8.99986 9.06309C6.42843 10.6719 3.91057 12.2808 1.39272 13.9432C1.232 14.0505 1.12486 14.4259 1.17843 14.5868C1.39272 15.2303 1.92843 15.3375 2.51772 15.3375C7.39272 15.3375 12.2677 15.3375 17.1427 15.3375C18.5356 15.3375 19.8749 15.3375 21.2677 15.3375C21.8034 15.3375 22.232 15.2303 22.4999 14.5868ZM24.6963 6.70347C24.6963 7.29338 24.6963 7.66877 24.6963 8.04416C24.6963 8.79495 24.5891 8.95584 23.7856 8.95584C21.9641 8.95584 20.1963 8.95584 18.3749 8.95584C17.5177 8.95584 17.357 9.11672 17.357 10.0284C17.357 10.8328 17.357 11.6372 17.357 12.4416C17.357 13.2997 17.5177 13.5142 18.4284 13.5142C20.2499 13.5142 22.0177 13.5142 23.8391 13.5142C24.6427 13.5142 24.6963 13.6215 24.6963 14.4259C24.6963 14.8013 24.6963 15.1767 24.6963 15.7129C25.8749 14.5331 26.9463 13.4606 27.9641 12.4416C29.1427 11.2618 29.1427 11.2618 27.9641 10.082C26.9463 9.00946 25.8749 7.93691 24.6963 6.70347ZM8.24986 8.20505C5.89272 6.64984 3.53557 5.20189 1.17843 3.64669C1.17843 6.7571 1.17843 9.70662 1.17843 12.7634C3.53557 11.2082 5.89272 9.76025 8.24986 8.20505ZM16.4463 8.84858C16.8749 8.04416 17.6249 7.82965 18.4284 7.88328C18.9641 7.93691 19.5534 7.88328 20.0891 7.88328C20.8927 7.88328 21.6963 7.88328 22.4999 7.88328C22.4999 6.43533 22.4999 5.09464 22.4999 3.70032C20.0891 5.25552 17.7856 6.70347 15.4284 8.20505C15.8034 8.41956 16.0713 8.58044 16.4463 8.84858Z" fill="#21325E"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0">
-                      <rect width="30" height="17" fill="#fff"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                  <button class="btn-icon">
-                    <svg class="card-mobile__icon-pen" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.76894 3.82414C10.0703 4.05018 10.3717 4.35156 10.6731 4.65293C8.94015 6.38586 7.20723 8.04344 5.54964 9.77637C4.7962 10.5298 3.96741 11.3586 3.21396 12.112C2.98793 12.3381 2.83724 12.5641 2.7619 12.7901C2.46052 13.6189 2.23448 14.5231 2.00845 15.3519C1.78242 16.03 2.38517 16.5574 3.06327 16.3313C3.89206 16.1053 4.72085 15.8793 5.4743 15.5779C5.77568 15.4272 6.07706 15.2012 6.30309 14.9751C8.56343 12.7148 10.8238 10.4545 13.0841 8.19413C13.2348 8.04344 13.4608 7.81741 13.6115 7.66672C13.9129 8.04344 14.2143 8.34482 14.5156 8.72154C14.5156 8.72154 14.365 8.87223 14.2896 9.02292C11.8032 11.4339 9.39222 13.9203 6.90585 16.3313C6.67981 16.5574 6.45378 16.7081 6.22775 16.7834C4.57017 17.3108 2.83724 17.8382 1.10431 18.2903C0.802936 18.3656 0.350869 18.3656 0.124835 18.1396C-0.0258542 18.0643 -0.0258542 17.6122 0.0494904 17.3108C0.501558 15.5779 1.02897 13.9203 1.55638 12.1874C1.63173 11.9614 1.78242 11.7353 1.9331 11.5093C4.49482 8.87223 7.05654 6.23517 9.54291 3.52277C9.61825 3.67346 9.6936 3.7488 9.76894 3.82414Z" fill="#21325E"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.87123 14.5985C4.87123 13.7697 4.41916 13.4684 3.81641 13.4684C6.37812 10.9066 9.01518 8.26959 11.5769 5.70787C11.8783 6.00925 12.255 6.46132 12.6317 6.83804C10.07 9.32441 7.50829 11.8861 4.87123 14.5985Z" fill="#21325E"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2282 5.8585C15.646 4.27627 14.1391 2.76937 12.5569 1.18714C13.461 -0.244408 14.5912 -0.395098 15.7967 0.810416C16.3241 1.33783 16.7762 1.86524 17.3036 2.31731C18.8105 3.74885 18.7351 4.5023 17.2282 5.8585Z" fill="#21325E"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5977 2.84478C10.899 2.5434 11.2758 2.24202 11.5771 1.94064C13.2347 3.59822 14.817 5.2558 16.4745 6.91339C16.1732 7.13942 15.8718 7.51614 15.4951 7.81752C13.9128 6.15994 12.2552 4.50236 10.5977 2.84478Z" fill="#21325E"/>
-                      </svg>                      
-                  </button>
-                </div>
-                <img
-                  class="card-mobile__icon"
-                  src="img/icons/icon-car.svg"
-                  alt="icon-car"
-                />
-              </div>
-              <div class="card-mobile__body">
-                <div class="card-mobile__order-descr">
-                  <span class="card-mobile__order-name">ביטקלוק</span>
-                  <span class="card-mobile__order-value">{{item.firstName}}</span>
-                </div>
-                <div class="card-mobile__order-descr">
-                  <span class="card-mobile__order-name">חטובמ םש</span>
-                  <span class="card-mobile__order-value">{{item.lastName}}</span>
-                </div>
-
-                <div class="card-mobile__order-group">
-                  <div class="card-mobile__order">
-                    <span class="card-mobile__order-name">חטובמ םש</span>
-                    <span class="card-mobile__order-value">{{item.orderId}}</span>
-                  </div>
-                  <div class="card-mobile__order">
-                    <span class="card-mobile__order-name">חוטיב תליחת</span>
-                    <span class="card-mobile__order-value">{{item.dateStart}}</span>
-                  </div>
-                  <div class="card-mobile__order">
-                    <span class="card-mobile__order-name">תוהז תדועת</span>
-                    <span class="card-mobile__order-value">{{item.phoneNumber}}</span>
-                  </div>
-                  <div class="card-mobile__order">
-                    <span class="card-mobile__order-name">העצה תחיתפ</span>
-                    <span class="card-mobile__order-value">{{item.dateEnd}}</span>
-                  </div>
-                </div>
-
-                <div class="card-mobile__bottom">
-                  <span class="card-mobile__order-instock">(חוקלל החלשנ)</span>
-                  <div class="card-mobile__order-number">
-                    <span class="card-mobile__order-name">הסילופ</span>
-                    <span class="card-mobile__order-value">{{item.id}}</span>
-                  </div>
-                </div>
-              </div>
+          <ul class="offers__cards cards">
+            <li class="card__head">
+              <div class="card__title row1">חוקלל חלשנ</div>
+              <div class="card__title row2">הסילופ ‘סמ</div>
+              <div class="card__title row3">חוטיבה תליחת</div>
+              <div class="card__title row4">העצהה תחיתפ</div>
+              <div class="card__title row5">תוהז תדועת</div>
+              <div class="card__title row6">יושיר ‘סמ</div>
+              <div class="card__title row7">חטובמ םש</div>
+              <div class="card__title row8">רצומ</div>
+              <div class="card__title row9">ףנע</div>
             </li>
-          </ul>
-          <ul class="offers__cards-desktop cards-desktop">
-            <li class="card-desktop__head" >
-              <div class="card-desktop__title row1">חוקלל חלשנ</div>
-              <div class="card-desktop__title row2">הסילופ ‘סמ</div>
-              <div class="card-desktop__title row3">חוטיבה תליחת</div>
-              <div class="card-desktop__title row4">העצהה תחיתפ</div>
-              <div class="card-desktop__title row5">תוהז תדועת</div>
-              <div class="card-desktop__title row6">יושיר ‘סמ</div>
-              <div class="card-desktop__title row7">חטובמ םש</div>
-              <div class="card-desktop__title row8">רצומ</div>
-              <div class="card-desktop__title row9">ףנע</div>
-            </li>
-            <li class="card-desktop" v-for="item in items">
-              <div class="card-desktop__wrapper">
-                <div class="card-desktop__item row1">
-                  <svg class="card-desktop__icon-check" v-if="item.isActive" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 11.5L10 18L22 2" stroke="#009C41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+            <li class="card" v-for="item in items">
+              <div class="card__wrapper grid-container">
+                <div
+                  class="card__item card__item--left card__item-isactive row1"
+                >
+                  <svg
+                    class="card__icon-check"
+                    v-if="item.isActive"
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 11.5L10 18L22 2"
+                      stroke="#009C41"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span v-if="item.isActive">(חוקלל החלשנ)</span>
                 </div>
-                <div class="card-desktop__item row2">
-                  <span></span>{{item.id}}</span>
+                <div class="card__item row2">
+                  <span class="card__item-head">הסילופ ‘סמ</span>
+                  <span class="card__item-value">{{item.id}}</span>
                 </div>
-                <div class="card-desktop__item row3">
-                  <span>{{item.dateStart}}</span>
+                <div class="card__item row3">
+                  <span class="card__item-head">חוטיבה תליחת</span>
+                  <span class="card__item-value">{{item.dateStart}}</span>
                 </div>
-                <div class="card-desktop__item row4">
-                  <span>{{item.dateEnd}}</span>
+                <div class="card__item card__item--left row4">
+                  <span class="card__item-head">העצהה תחיתפ</span>
+                  <span class="card__item-value">{{item.dateEnd}}</span>
                 </div>
-                <div class="card-desktop__item row5">
-                  <span>{{item.phoneNumber}}</span>
+                <div class="card__item row5">
+                  <span class="card__item-head">תוהז תדועת</span>
+                  <span class="card__item-value">{{item.phoneNumber}}</span>
                 </div>
-                <div class="card-desktop__item row6">
-                  <span>{{item.orderId}}</span>
+                <div class="card__item card__item--left row6">
+                  <span class="card__item-head">יושיר ‘סמ</span>
+                  <span class="card__item-value">{{item.orderId}}</span>
                 </div>
-                <div class="card-desktop__item row7">
-                  <span>{{item.firstName}}</span>
+                <div class="card__item row7">
+                  <span class="card__item-head">חטובמ םש</span>
+                  <span class="card__item-value">{{item.firstName}}</span>
                 </div>
-                <div class="card-desktop__item row8">
-                  <span>{{item.lastName}}</span>
+                <div class="card__item row8">
+                  <span class="card__item-head">רצומ</span>
+                  <span class="card__item-value">{{item.lastName}}</span>
                 </div>
-                <div class="card-desktop__item row9">
-                  <span>{{item.model}}</span>
+                <div class="card__item card__item-iconcar row9">
+                  <img src="img/icons/icon-car.svg" alt="icon car" />
+                  <span class="card__item-value">{{item.model}}</span>
                 </div>
-                <div class="card-desktop__item-nav card-desktop__nav-list">
-                  <div class="card-desktop__nav-item">
-                    <button class="btn-icon btn-icon--white btn-icon__message"></button>
-                    <div class="card-desktop__nav-text">
-                      <div class="card-desktop__nav-title">תחילש</div>
-                      <div class="card-desktop__nav-subtitle">העצהה</div>
+                <div class="card__item-nav card__nav-list row10">
+                  <div class="card__nav-item">
+                    <button class="btn-icon btn-icon__message"></button>
+                    <div class="card__nav-text">
+                      <div class="card__nav-title">תחילש</div>
+                      <div class="card__nav-subtitle">העצהה</div>
                     </div>
                   </div>
-                  <div class="card-desktop__nav-item">
-                    <button class="btn-icon btn-icon--white btn-icon__pen"></button>
-                    <div class="card-desktop__nav-text">
-                      <div class="card-desktop__nav-title">תחילש</div>
-                      <div class="card-desktop__nav-subtitle">העצהה</div>
+                  <div class="card__nav-item">
+                    <button class="btn-icon btn-icon__pen"></button>
+                    <div class="card__nav-text">
+                      <div class="card__nav-title">תחילש</div>
+                      <div class="card__nav-subtitle">העצהה</div>
                     </div>
                   </div>
                 </div>
